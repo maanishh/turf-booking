@@ -82,7 +82,7 @@
         {
             $_SESSION['login'] = "<div class='success'>Login Successfully</div>";
             $_SESSION['user'] = $username;  //checked user logged in or not
-            header("location:".SITEURL.'index.php?'.$username);
+            header("location:".SITEURL.'index.php?'.$username); //checked user logged in or not
         }
         else
         {
@@ -90,4 +90,6 @@
             header("location:".SITEURL.'login-user.php');
         }
     }
+
 ?>
+
